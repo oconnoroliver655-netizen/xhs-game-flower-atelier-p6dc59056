@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#17223c">
+<meta name="description" content="原创女性向互动剧情 H5 游戏">
+<title>雾港花房</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+<main>
+<header><b id="mark"></b><span id="genre"></span></header>
+<section class="hero" aria-hidden="true"><div class="orb" id="orb">✧</div></section>
+<section class="panel">
+  <small id="chapter"></small><h1 id="heading"></h1>
+  <div class="speaker-row"><img id="portrait" alt="" hidden width="56" height="56"><p class="speaker" id="speaker"></p></div>
+  <div class="story" id="story" aria-live="polite"></div>
+  <fieldset id="builder" hidden><legend>自主配花工作台</legend>
+<label>主花<select id="main-flower"></select></label>
+<label>配花<select id="leaf-flower"></select></label>
+<label>包装<select id="wrap-flower"></select></label>
+<svg id="bouquet-preview" role="img" aria-label="自选花束预览" viewBox="0 0 280 180" data-main="freesia" data-leaf="eucalyptus" data-wrap="paper">
+<rect width="280" height="180" rx="12" fill="#183c34"/>
+<circle cx="140" cy="84" r="65" fill="#ffffff" opacity=".035"/>
+<g stroke="#789b72" stroke-width="3" fill="none"><path d="M140 155Q120 100 91 52M140 155Q140 88 140 34M140 155Q160 100 189 52M140 155Q109 113 72 92M140 155Q170 113 208 92"/></g>
+<g class="leaf eucalyptus" fill="#a1b9a0"><ellipse cx="84" cy="99" rx="15" ry="7" transform="rotate(35 84 99)"/><ellipse cx="109" cy="111" rx="15" ry="7" transform="rotate(-24 109 111)"/><ellipse cx="196" cy="99" rx="15" ry="7" transform="rotate(-35 196 99)"/><ellipse cx="171" cy="111" rx="15" ry="7" transform="rotate(24 171 111)"/></g>
+<g class="leaf daisy" fill="#fff4dd" stroke="#e4bd78" stroke-width="1"><circle cx="72" cy="92" r="10"/><circle cx="208" cy="92" r="10"/><circle cx="72" cy="92" r="4" fill="#e4bd78"/><circle cx="208" cy="92" r="4" fill="#e4bd78"/></g>
+<g class="flower freesia" fill="#fff1d6" stroke="#d6c6a4" stroke-width="1"><path d="M91 61q-21-8-16-21 9-10 16 1 7-11 16-1 5 13-16 21Z"/><path d="M140 43q-20-10-14-22 8-10 14 1 6-11 14-1 6 12-14 22Z"/><path d="M189 61q-21-8-16-21 9-10 16 1 7-11 16-1 5 13-16 21Z"/></g>
+<g class="flower tulip" fill="#e4a5af" stroke="#bd7888" stroke-width="1"><path d="M77 38q10 0 14 11 4-11 14-11-1 25-14 27-13-2-14-27Z"/><path d="M126 18q10 0 14 11 4-11 14-11-1 25-14 27-13-2-14-27Z"/><path d="M175 38q10 0 14 11 4-11 14-11-1 25-14 27-13-2-14-27Z"/></g>
+<g class="flower rose" fill="#a94f64" stroke="#e3a1a8" stroke-width="1.5"><circle cx="91" cy="48" r="17"/><circle cx="140" cy="28" r="17"/><circle cx="189" cy="48" r="17"/><path d="M81 47q15-13 19 3-5 9-13 0M130 27q15-13 19 3-5 9-13 0M179 47q15-13 19 3-5 9-13 0" fill="none"/></g>
+<path class="wrap paper" d="M92 100L140 117L188 100L154 170H126Z" fill="#e9d3b5" stroke="#b58f70" stroke-width="2"/><path class="wrap linen" d="M92 100L140 117L188 100L154 170H126Z" fill="#b8a485" stroke="#e1cfac" stroke-width="2" stroke-dasharray="3 2"/><path d="M119 141Q140 148 161 141M140 145q-20-18-23-9 3 10 23 9q20-18 23-9-3 10-23 9" stroke="#a96964" stroke-width="3" fill="none"/>
+</svg>
+<p id="quote" aria-live="polite"></p><button id="commit-bouquet" class="choice" type="button">确认自选花束</button>
+</fieldset><div id="choices"></div>
+</section>
+<div class="foot"><span id="progress"></span><button class="reset" id="sound" type="button" aria-pressed="false">音效：关</button><button class="reset" id="reset">重置进度</button></div>
+<footer>原创互动 H5 · 手机端优先 · 本机自动保存</footer>
+</main>
+<script src="src/story.js"></script><script src="src/game.js"></script><script src="src/sound.js"></script>
+</body>
+</html>
